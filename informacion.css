@@ -1,0 +1,113 @@
+/* Estilos específicos para la página de Información */
+
+/* Sección de Beneficios */
+.benefits {
+    padding: 4rem 2rem;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.benefits h2 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-white);
+}
+
+/* Estilos para la sección de Evidencias */
+.evidences {
+    padding: 4rem 2rem;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.evidences h2 {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.evidences p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--color-gray);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+/* Media Queries para la sección de Beneficios */
+@media (max-width: 768px) {
+    .benefits h2 {
+        font-size: 2rem;
+    }
+
+    .benefit-item {
+        padding: 1.5rem;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-item p {
+        font-size: 0.9rem;
+    }
+}
+    
